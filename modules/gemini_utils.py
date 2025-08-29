@@ -1,5 +1,4 @@
 import google.generativeai as genai
-
 # ⚠️ Load API key from env var in production (not hardcoded)
 genai.configure(api_key="API_KEY_HERE")
 
