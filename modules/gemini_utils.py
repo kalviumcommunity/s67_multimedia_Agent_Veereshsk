@@ -36,7 +36,7 @@ def build_dynamic_prompt(base_prompt, persona="Default", output_format="Default"
 
 
 def get_gemini_response(base_prompt, persona="Default", output_format="Default",
-                        custom_instructions=None, temperature=0.7, top_p=0.95, top_k=40):
+                        custom_instructions=None, temperature=0.4, top_p=0.92, top_k=30):
     """
     One-shot request (no chat memory).
     """
