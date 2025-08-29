@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 # Direct API key (⚠️ do NOT commit this to GitHub!)
-genai.configure(api_key="AIzaSyB7mY6VvjecZen74hllNIVH1IAvocrDCgw")
+genai.configure(api_key="API_Key")
 
 # Define the persona and format instructions here
 PERSONA_PROMPTS = {
