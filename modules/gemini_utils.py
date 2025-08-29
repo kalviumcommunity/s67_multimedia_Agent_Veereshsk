@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 # ⚠️ Load API key from env var in production (not hardcoded)
-genai.configure(api_key="API_KEY_HERE")
+genai.configure(api_key="AIzaSyB7mY6VvjecZen74hllNIVH1IAvocrDCgw")
 
 PERSONA_PROMPTS = {
     "Default": "You are a helpful and intelligent assistant.",
@@ -37,7 +37,7 @@ def build_dynamic_prompt(base_prompt, persona="Default", output_format="Default"
 
 
 def get_gemini_response(base_prompt, persona="Default", output_format="Default",
-                        custom_instructions=None, temperature=0.4, top_p=0.92, top_k=30):
+                        custom_instructions=None, temperature=0.5, top_p=0.005, top_k=0.0001):
     """
     One-shot request (no chat memory).
     """
